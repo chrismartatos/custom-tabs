@@ -69,10 +69,17 @@ body { background-color: #e1e1e1; }
 #tabs { 
 	position:relative; 
 	min-height:100px; 
+	margin-bottom: 40px;
+	
 }
 
-#tabs .tab-menu { 
-	border-bottom:1px solid #000;  
+#tabs .tab-menu a { 
+	border-top: 1px solid #000;
+	border-left: 1px solid #000;
+}
+
+#tabs .tab-menu .tab-3 {
+	border-right: 1px solid #000;
 }
 
 #tabs .tab-title { 
@@ -89,7 +96,8 @@ body { background-color: #e1e1e1; }
   z-index:5; 
   top:40px; 
   left:0; 
-  padding:10px 0;
+  padding:10px;
+  border: 1px solid #000;
 }
 
 #tabs .tab-content.active { 

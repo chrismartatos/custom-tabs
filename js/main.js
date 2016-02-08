@@ -8,7 +8,8 @@ $(function()
 ---------------------------------------------------------------------------*/
 function tabs_init()
 {
-var tabs = $('#tabs');
+  //Target tabs
+  var tabs = $('#tabs');
 	
   if(tabs.length)
   {    
@@ -75,8 +76,18 @@ var tabs = $('#tabs');
     
     //Init First visible title
     $('#tabs .tab-title .tab-btn:visible').eq(0).addClass('active').click();
+    
     //Init First visible tab
     $('#tabs .tab-content:visible').eq(0).addClass('active');
+    
+    //Resize height
+    $(window).resize(function()
+    {
+	   var gutter = 60;
+	   var resize_height = $('#tabs .tab-content:visible').height();
+	   
+	   tabs.css('height', resize_height+gutter);
+    });
     
   }   
 }
