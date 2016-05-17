@@ -5,12 +5,22 @@
 #footer { 
 	width: 100%; 
 	display: block;  
-	background-color: rgba(255,255,255,.8);
+	background-color: rgba(255,255,255,.9);
 	position: relative;
 }
 
 #header {
 	height: 50px;
+}
+
+#logo {
+	display: block;
+	text-align: center;
+	padding: 10px 0 0;
+}
+
+#logo > img { 
+	display: inline;
 }
 
 #footer {
@@ -24,22 +34,11 @@
 	color: #000;
 }
 
-#logo {
-	display: block;
-	text-align: center;
-	padding: 10px 0 0;
-}
-
-#logo > img { 
-	display: inline;
-}
-
-
 /*--------------------------------------------------------------------
 		Layout
 --------------------------------------------------------------------*/
 body { 
-	background-color: #e1e1e1; 
+	background-color: #f1f1f1; 
 }
 
 #content { 
@@ -69,7 +68,7 @@ body {
 	
 }
 
-#tabs .tab-menu ul {
+#tabs .tab-menu > ul {
 	margin: 0;
 	padding: 0;
 }
@@ -93,7 +92,7 @@ body {
 	float:left; 
 }
 
-#tabs .tab-content{
+#tabs .tab-content {
   display:none;
   text-align:left;
   position:absolute;
