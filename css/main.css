@@ -1,13 +1,4 @@
 /*--------------------------------------------------------------------
-		Center list
---------------------------------------------------------------------*/
-.center-ul { width:100%; overflow:hidden; position:relative }
-.center-ul > ul { clear:left; float:left; position:relative; left:50%; text-align:center; list-style:none; margin:0; padding:0 }
-.center-ul > ul > li { display:block; float:left; position:relative; right:50% }
-.center-ul > ul > li > a { display:block; margin:0 5px }
-
-
-/*--------------------------------------------------------------------
 		Header // Footer
 --------------------------------------------------------------------*/
 #header,
@@ -47,8 +38,13 @@
 /*--------------------------------------------------------------------
 		Layout
 --------------------------------------------------------------------*/
-body { background-color: #e1e1e1; }
-#content { padding: 100px 0 50px; }
+body { 
+	background-color: #e1e1e1; 
+}
+
+#content { 
+	padding: 100px 0 50px; 
+}
 
 #content img {
 	max-width: 100%;
@@ -71,6 +67,15 @@ body { background-color: #e1e1e1; }
 	min-height:100px; 
 	margin-bottom: 40px;
 	
+}
+
+#tabs .tab-menu ul {
+	margin: 0;
+	padding: 0;
+}
+
+#tabs .tab-menu ul > li{
+	list-style: none;
 }
 
 #tabs .tab-menu a { 
@@ -123,7 +128,10 @@ body { background-color: #e1e1e1; }
   color:#FFF;
 }
 
-#tabs .tab-title a:hover { text-decoration:none; }
+#tabs .tab-title a:hover,
+#tabs .tab-title a:focus { 
+	text-decoration:none; 
+}
 
 
 
@@ -134,8 +142,5 @@ body { background-color: #e1e1e1; }
 {
 	#header { position: relative; height: 45px; }
 	#logo { padding: 0; } 
-	#locations-nav { display: none; }
-	#mobile-nav { display: block; }
 	#tabs .tab-title a { padding: 0 10px; font-size: 11px; }
-	
 }
